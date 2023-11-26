@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  margin: 0;
+}
+.column_first {
+  background: turquoise;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+.column_second {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+header {
+  background: palevioletred;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  display: flex;
+}
+
+header,
+article,
+nav {
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #000;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  flex: 4;
+  min-height: 60vh;
+}
+
+.gallery_flex {
+  background-color: azure;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  max-height: 100vh;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+
+.gallery_flex img {
+  margin: 10px;
+  border: 2px solid black;
+  padding: 5px;
+  width: 20vw;
+  height: 30vh;
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px lightgrey);
+}
+
+.hover_image {
+  display: inline-block;
+  overflow: hidden;
+}
+.hover_image img {
+  transition: 1s;
+}
+.hover_image img:hover {
+  transform: scale(1.2);
+}
+
+.filter {
+  filter: grayscale(1);
+  transition: 1s;
+}
+.filter:hover {
+  filter: grayscale(0);
+}
